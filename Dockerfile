@@ -29,4 +29,6 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 
 RUN apt-get update && apt-get install -y zip && rm -rf /var/lib/apt/lists/*
 
+RUN npm install -g yarn
+
 CMD [ "node" ]
